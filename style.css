@@ -1,0 +1,89 @@
+body{
+    background-image: url(kepek/v3.jpg);
+}
+main{
+
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #cfc6b5;
+}
+header{
+    height: 100px;
+    background-color:#506a85;
+}
+footer{
+    height: 60px;
+    text-align: center;
+    background-color:#506a85;
+    color: white;
+}
+
+ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+ 
+li a {
+    display: block;
+    color: #456280;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    
+  }
+article{
+    color: #456280;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "k sz"
+    ;
+}
+
+
+.kepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: k;
+    
+    
+}
+.szovegsec{
+    grid-area: sz;
+}
+section{
+    margin: 10px;
+}
+.kepek img{
+    border: solid 4px #456280;
+    
+    margin: 5px;
+}
+@media only screen and (max-width: 500px) {
+    article{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "sz"
+        "k"
+    ;
+    }
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .kepek{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        
+        
+    }
+  }
